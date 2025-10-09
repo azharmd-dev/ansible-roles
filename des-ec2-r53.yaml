@@ -21,7 +21,7 @@
 
   
   tasks:
-  - name: create ec2 instance
+  - name: destroy ec2 instance
     amazon.aws.ec2_instance:
       name: "{{ item }}"
       state: absent
@@ -47,7 +47,7 @@
   #     msg: "{{ item.instances[0].private_ip_address }}"
   #   loop: "{{ ec2_output.results }}"
 
-  - name: create route53 record
+  - name: destroy route53 record
     amazon.aws.route53:
       state: absent
       zone: "{{ domain_name }}"
