@@ -15,6 +15,6 @@
     replace: '0.0.0.0'
 
 - name: enable and start service
-  ansible.become.import_role:
+  ansible.builtin.import_role:
     name: common
     tasks_from: system_start.yaml
