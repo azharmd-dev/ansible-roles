@@ -14,7 +14,8 @@
     regexp: '127.0.0.1'
     replace: '0.0.0.0'
 
-- name: enable and start service
-  ansible.builtin.import_role:
-    name: common
-    tasks_from: system_start.yaml
+- name: start and enable service
+  ansible.builtin.service:
+    name: mongod
+    state: started
+    enabled: yes
