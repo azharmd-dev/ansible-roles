@@ -19,7 +19,6 @@
     # - payment
     # - frontend
 
-  
   tasks:
   - name: create ec2 instance
     amazon.aws.ec2_instance:
@@ -70,4 +69,4 @@
     when: item.item == "frontend"
     loop: "{{ ec2_output.results }}"
 
-#ansible-playbook -i inventory.ini <playbookname> -e "instances=['mongodb', 'mysql']"
+#ansible-playbook -i inventory.ini <playbookname> -e "instances=['mongodb', 'mysql', 'user']"
