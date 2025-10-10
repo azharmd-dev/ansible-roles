@@ -21,7 +21,7 @@
       state: absent
       path: /tmp/{{ component }}.zip
 
-  - name: downloading a {{component }} application
+  - name: downloading a {{ component }} application
     ansible.builtin.get_url:
       url: https://roboshop-artifacts.s3.amazonaws.com/{{ component }}-v3.zip
       dest: /tmp/{{ component }}.zip
