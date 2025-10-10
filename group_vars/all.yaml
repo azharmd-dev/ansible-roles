@@ -1,0 +1,10 @@
+domain_name: azharprojects.site
+Monogodb_Host: mongodb.{{ domain_name }}
+Redis_Host: redis.{{ domain_name }}
+User_Host: user.{{ domain_name }}
+Catalogue_Host: catalogue.{{ domain_name }}
+Rabbitmq_Host: rabbitmq.{{ domain_name }}
+Mysql_Host: mysql.{{ domain_name }}
+Cart_Host: cart.{{ domain_name }}
+Payment_Host: payment.{{ domain_name }}
+Shipping_Host: shipping.{{ domain_name }}
