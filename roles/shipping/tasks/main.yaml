@@ -21,8 +21,8 @@
     state: import
     name: all
     login_host: "{{ Mysql_Host }}"
-    login_user: "{{ MYSQL_ROOT_USER }}"
-    login_password: "{{ MYSQL_ROOT_PASSWORD }}"
+    login_user: "{{ Mysql_Root_User }}"
+    login_password: "{{ Mysql_Root_Password }}"
     target: "{{ item }}"
   loop:
   - /app/db/schema.sql
