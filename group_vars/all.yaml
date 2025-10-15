@@ -1,5 +1,5 @@
 domain_name: azharprojects.site
-Monogodb_Host: mongodb.{{ domain_name }}
+Mongodb_Host: mongodb.{{ domain_name }}
 Redis_Host: redis.{{ domain_name }}
 User_Host: user.{{ domain_name }}
 Catalogue_Host: catalogue.{{ domain_name }}
