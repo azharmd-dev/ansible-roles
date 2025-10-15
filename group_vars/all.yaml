@@ -8,3 +8,4 @@ Mysql_Host: mysql.{{ domain_name }}
 Cart_Host: cart.{{ domain_name }}
 Payment_Host: payment.{{ domain_name }}
 Shipping_Host: shipping.{{ domain_name }}
+version: "{{ 1.0 }}"
