@@ -13,9 +13,9 @@
     ansible.builtin.include_vars:
      file: "{{ role_path }}/vars/secrets.yaml"
 
-  - name: Debug MySQL password
-    ansible.builtin.debug:
-      msg: "Mysql_Password = {{ Mysql_Password }}"
+  # - name: Debug MySQL password
+  #   ansible.builtin.debug:
+  #     msg: "Mysql_Password = {{ Mysql_Password }}"
 
   - name: setup for root user password
     ansible.builtin.command: mysql_secure_installation --set-root-pass {{ Mysql_Password }}
